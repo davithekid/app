@@ -12,10 +12,10 @@ export default function Banner() {
     return (
         <>
             <section>
-                <h1 className="flex justify-center font-bold text-2xl">Destaques</h1>
+                <h1 className="flex justify-center font-bold text-2xl">Comics em Destaque</h1>
 
                     
-                <div className="md:hidden flex justify-center">
+                <div className="lg:hidden flex justify-center">
                     <div className="animes flex w-[90%] h-[225px]">
                         {comics.map((comic, index) =>index>2&& (
                             <img key={comic.id} src={comic.img} className="w-0 grow-100 object-cover duration-300 ease-out opacity-40 rounded-2xl m-[1%] hover:w-[117px] hover:opacity-100 hover:contrats-[120%]" ></img>
@@ -24,10 +24,10 @@ export default function Banner() {
                 </div>
 
                 
-                <div className="hidden md:flex justify-center">
+                <div className="hidden lg:flex justify-center">
                     <div className="animes flex w-[60%] h-[450px]">
                         {comics.map((comic) => (
-                            <img key={comic.id} src={comic.img} className="w-0 grow-100 object-cover duration-300 ease-out opacity-40 rounded-2xl m-[1%] hover:w-[117px] hover:opacity-100 hover:contrats-[120%]" ></img>
+                            <img key={comic.id} src={comic.img} className="hover:border-2 border-b-gray-500 w-0 grow-100 object-cover duration-300 ease-out opacity-40 rounded-2xl m-[1%] hover:w-[117px] hover:opacity-100 hover:contrats-[120%]" ></img>
                         ))}
                     </div>
                 </div>
