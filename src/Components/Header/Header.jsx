@@ -12,9 +12,6 @@ export default function Header() {
     ]
     return (
         <>
-
-
-
             <header>
                 <nav className="flex items-center justify-between bg-gradient-to-b
             from-blue-500
@@ -39,7 +36,6 @@ export default function Header() {
                             <li><img src="./icon-perfil.jpeg" className="w-20 rounded-full border-4 border-blue-900"></img></li>
                         </ul>
                     </div>
-
                 </nav>
             </header>
 
