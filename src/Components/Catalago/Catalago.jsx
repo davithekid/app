@@ -28,10 +28,6 @@ function ComicList({ genreId, catalogoHq }) {
     element.scrollLeft += 500;
   };
 
- // Filtrando HQs baseadas no genreId
- const filteredHq = genreId
- ? catalogoHq.filter((hq) => hq.genre === genreId)
- : catalogoHq;
 
   return (
     <>
