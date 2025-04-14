@@ -22,7 +22,7 @@ export default function Header() {
                         <div className="flex items-center justify-center tracking-widest">
                             <ul className="flex items-center justify-center gap-10 font-bold text-3xl">
                                 {menu.map((item, index) => (
-                                    <li key={index} className="flex items-center hover:text-orange-400">
+                                    <li key={index} className="flex items-center hover:text-yellow-400 transition-all duration-200 ease-in cursor-pointer">
                                         <HeaderItem name={item.name} Icon={item.icon}/>
                                     </li>
                                 ))}
